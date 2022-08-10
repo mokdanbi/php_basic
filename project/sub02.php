@@ -1,5 +1,5 @@
-<? $subnum = 1 ?>
-<? $sub_title = '기업정보'; ?>
+<? $subnum = 2 ?>
+<? $sub_title = '솔루션'; ?>
 
 <? include 'head.php'; ?>
 
