@@ -4,19 +4,31 @@
                     <img src="./img/logo.png" alt="">
                 </div>
                 <address>
-                    주소 : 부산광역시 부산진구 부전로 7
+                    <ul>
+                        <li>주소 : <?= $c_address ?></li>
+                        <li>사업자등록번호 : <?= $c_num ?></li>
+                        <li>
+                            전화 : <a href="tel:<?= $tel ?>"><?= $tel ?></a>
+                        </li>
+                        <li>
+                            <a href="email:<?= $email ?>">이메일 : <?= $email ?></a>
+                        </li>
+                    </ul>
+                    <div class="copyright">
+                        &copy; <?= $company ?> all rights reserved.
+                    </div>
                 </address>
             </div>
         </footer>
-    </div>
+        </div>
 
-    <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script>
-        var pagenum = <?= $subnum ?>;
-        $('.Lnb li').eq(pagenum - 1).addClass('on')
-    </script>
-</body>
+        <script src="./js/jquery-1.12.4.min.js"></script>
+        <script src="./js/slick.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script>
+            var pagenum = <?= $subnum ?>;
+            $('.Lnb li').eq(pagenum - 1).addClass('on')
+        </script>
+        </body>
 
-</html>
+        </html>
